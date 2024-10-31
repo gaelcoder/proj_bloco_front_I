@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiscoDeco - Carrinho</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=delete" />
+</head>
+
+<body>
+    <header id="topo">
+        <nav>
+            <a href="/index.html"><img src="/images/TextoLogoDD@4x.png" width="70px"></a>
+            <ul>
+                <li><a href="/outrosLancamentos/lancamentos.html">Lançamentos</a></li>
+                <li><a href="/categorias/categorias.html">Categorias</a></li>
+                <li id="cart"><a href="carrinho.html">Carrinho</a></li>
+                <li id="userGreeting"><a href="/areaAcesso/acesso.html">Acessar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="carrinho">
+        <h2>Seu Carrinho</h2>
+        <p class="label">
+            < Retirada na loja disponível no Rio de Janeiro, RJ>
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Imagem</th>
+                    <th>Item</th>
+                    <th>Valor</th>
+                    <th>Quantidade</th>
+                    <th>-</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela">
+
+            </tbody>
+        </table>
+        <article>
+            <button id="limparCarrinho">Limpar Carrinho</button>
+            <p id="totalCarrinho">Total<span>:</span> <span>R$</span><span id="totalValor">0.00</span></p>
+            <button id="finalizarCompra">Finalizar Compra</button>
+        </article>
+    </section>
+
+    <section id="finalizacaoCompra" style="display:none;">
+        <h2>Finalizar Compra</h2>
+        <p class="label">
+            < Retirada na loja disponível no Rio de Janeiro, RJ>
+        </p>
+        <article id="etapaCompra">
+            <section id="areaEntrega">
+        <label>
+            Entrega ou Retirada?
+            <select id="entregaOpcao">
+                <option value="Retirada">Retirada</option>
+                <option value="Entrega">Entrega</option>
+            </select>
+        </label>
+        <div id="enderecos">
+            <h3>Escolha o Endereço:</h3>
+            <div id="listaEnderecos"></div>
+            <button id="novoEndereco">Adicionar novo endereço + </button>
+            <div id="novoEnderecoForm" style="display: none;">
+                <h3>Adicionar Novo Endereço</h3>
+                <form id="formEndereco">
+                    <label>Rua: <input type="text" id="enderecoRua" placeholder="Rua do Mundo" required></label><br>
+                    <label>Número: <input type="text" id="enderecoNumero"  placeholder="100" required></label><br>
+                    <label>CEP: <input type="text" id="enderecoCep" placeholder="12345-000" required></label><br>
+                    <div class="break"></div>
+                    <button type="button" onclick="adicionarEndereco()">Adicionar</button>
+                    <button type="button" onclick="cancelarEndereco()">Cancelar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="etapaPagamento">
+        <label>
+            Forma de Pagamento
+            <select id="pagamentoOpcao">
+                <option value="Boleto">Boleto</option>
+                <option value="Pix">Pix</option>
+                <option value="cartao">Cartão de Crédito</option>
+            </select>
+        </label>
+        <div id="cartoes" style="display:none;">
+            <h3>Escolha o cartão:</h3>
+            <div id="listaCartoes"></div> 
+            <button id="novoCartao">Adicionar novo cartão +</button>
+        </div>
+
+        <div id="novoCartaoForm" style="display: none;">
+            <h3>Adicionar novo cartão</h3>
+            <form id="formCartao">
+                <label>Número do Cartão: <input type="text" id="cartaoNumero" placeholder="1234 5678 9101 1121" required></label><br>
+                <label>Nome no Cartão: <input type="text" id="cartaoNome" placeholder="Maria Silva" required></label><br>
+                <label>CPF do Titular: <input type="text" id="cartaoCpf" placeholder="123.456.789-00" required></label><br>
+                <label>Validade (MM/AA): <input type="text" id="cartaoValidade" placeholder="01/01" required></label><br>
+                <label>CVV: <input type="text" id="cartaoCvv" placeholder="123" required></label><br>
+                <div class="break"></div>
+                <button type="button" onclick="adicionarCartao()">Adicionar Cartão</button>
+                <button type="button" onclick="cancelarCartao()">Cancelar</button>
+            </form>
+        </div>
+    </section>
+    </article>
+    <article id="botoes">
+        <button id="voltarProCarrinho">Voltar ao carrinho</button>
+        <button id="confirmarCompra">Confirmar Compra</button>
+    </article>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

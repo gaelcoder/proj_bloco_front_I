@@ -1,0 +1,232 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+}
+
+*{
+    font-family: 'Oswald', sans-serif;
+}
+
+h2{
+    font-size: 24px;
+    color: #20373d;
+    text-align: center;
+}
+
+#topo img{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+#topo{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 70px;
+    margin-top: -104px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+#topo ul{
+    width: auto;
+    text-align: right;
+    padding: 0px;
+    margin-top: -65px;
+}
+
+#topo nav{
+    width: auto;
+    margin: 0px;
+    margin-top: -18px;
+    height: 70px;
+    padding: 0px;
+}
+
+#topo ul li{
+    display: inline-block;
+    text-align: center;
+    margin-top: 3px;
+    height: 70px;
+    width: 120px;
+    align-content: center;
+    margin-left: -4px;
+    background-size: 200% 200%;
+    background-image: linear-gradient(to top, #cf1800  50%, #ffffff 50%);
+    -webkit-transition: background-position 300ms;
+    -moz-transition: background-position 300ms;
+    -ms-transition: background-position 300ms;
+    -o-transition: background-position 300ms;
+    transition: background-position 300ms;
+}
+
+#topo ul li:last-of-type{
+    border-radius: 0px 0px 20px 0px;
+}
+
+#topo li:hover{
+    background-image: 
+    linear-gradient(to top, #cf1800 51%,  #ffffff 50%);
+    background-position: 0 100%;
+    -webkit-transition: background-position 300ms;
+    -moz-transition: background-position 300ms;
+    -ms-transition: background-position 300ms;
+    -o-transition: background-position 300ms;
+    transition: background-position 300ms;
+    cursor: pointer;
+}
+
+#topo ul li a{
+    transition: 300ms;
+} 
+
+#topo li:hover a{
+    transform: scale(1.2);
+    transition: 300ms;
+    color: #ffffff;
+}
+
+
+#topo ul li a{
+    text-decoration: none;
+    color: #cf1800;
+}
+
+#topo{
+    background-color: #ffffff;
+    height: 73px;
+    padding: 0px;
+    border-bottom: #808080 solid 0.5px;
+}
+
+
+.label{
+    color: #b41b1b; 
+    background-color: #b41b1b; 
+    font-family: Khand, sans-serif; 
+    font-weight: 400; 
+    font-size: 1px; 
+    text-align: center; 
+    padding-left: 15px; 
+    padding-right: 15px; 
+    padding-top: 4px;
+    width: 30px;
+    margin: auto;
+    margin-top: -16px;  
+    margin-bottom: 16px;
+}
+
+#espacoTabela{
+    margin: auto;
+    margin-top: 100px;
+}
+
+table{
+    margin: auto;
+    text-align: center;
+    background-color: #fffdfd;
+    width: auto;
+    height: 360px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    text-align: center;
+    margin: auto;
+    transition: 0.3s;
+    border-collapse: collapse;
+}
+
+table th{
+    background-color: #b41b1b;
+    color: #fdfdfd;
+    font-size: 16px;
+}
+
+#corpoTabela td button{
+   width: auto;
+   color: #fdfdfd;
+   background-color: #b41b1b;
+   border-radius: 20px;
+   width: 120px;
+   height: 50px;
+   transition: 0.2s;
+}
+
+#corpoTabela td button:hover{
+    color: #b41b1b;
+   background-color: #fdfdfd;
+   border: #b41b1b 2px solid;
+   transition: 0.2s;
+   cursor: pointer;
+}
+
+#corpoTabela td{
+    padding-left: 30px;
+    padding-right: 30px;    
+}
+
+table td{
+    border: #b41b1b 1px solid;
+}
+
+
+#userGreeting{
+    color: #cf1800;
+ }
+ 
+ #userGreeting a {
+     color: #cf1800;
+     text-decoration: none;
+     transition: color 0.3s;
+ }
+ 
+ #userGreeting:hover{
+     color: #ffffff;
+ }
+ 
+ 
+ 
+ .dropdown-menu {
+     display: none;
+     position: absolute;
+     background-color: white;
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+     color: #c01a04;
+     font-size: 14px;
+     z-index: 1; 
+     width: 100px;
+     height: 85px;
+     overflow: hidden;
+     margin-top: 20px;
+ }
+ 
+ #userGreeting .dropdown-menu a:first-child{
+     position: absolute;
+     margin-top: 0px;
+     margin-left: -35px;
+ }
+ 
+ #userGreeting .dropdown-menu a:nth-child(2){
+     position: absolute;
+     margin-top: 30px;
+     margin-left: -34px;
+ }
+ 
+ #userGreeting .dropdown-menu a:nth-child(3){
+     position: absolute;
+     margin-top: 55px;
+     margin-left: -16px;
+ }
+ 
+ 
+ 
+ #userGreeting:hover .dropdown-menu a{
+     color: #c01a04;
+     transform: none;
+ }
+ 
+ #userGreeting .dropdown-menu a:hover{
+     text-decoration: underline;
+ }

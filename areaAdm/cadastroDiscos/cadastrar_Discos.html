@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiscoDeco - Cadastrar Álbuns</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="topo">
+        <nav>
+            <a href="/index.html"><img src="/images/TextoLogoDD@4x.png" width="70px"></a>
+            <ul>
+                <li><a href="/outrosLancamentos/lancamentos.html">Lançamentos</a></li>
+                <li><a href="/categorias/categorias.html">Categorias</a></li>
+                <li id="cart"><a href="../../carrinho/carrinho.html">Carrinho</a></li>
+                <li id="userGreeting"><a href="/areaAcesso/acesso.html">Acessar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="supersection">
+        <section id="secaoForm">
+            <h1>Cadastrar álbum</h1>
+            <h2 id="alertaJaExiste"></h2>
+            <form id="registroDiscoNovo">
+                <input id="nomeAlbum" name="albumnome" type="text" placeholder="Nome do Álbum">
+                <input id="artista" name="artista" type="text" placeholder="Artista">
+                <input id="genero" name="genero" type="text" placeholder="Gênero">
+                <input id="ano" name="ano" type="number" placeholder="Ano de Lançamento">
+                <input id="valor" name="valor" type="number" min="0" max="1000" step="0.01" placeholder="Valor">
+                <input id="linkImagem" name="linkimagem" type="text" placeholder="Link de imagem do álbum">
+                <input type="button" class="botao" value="Registrar álbum" onclick="adicionarDisco()">
+            </form>
+            <article id="espacoAlertas">
+                <p id="albumaviso"></p>
+                <p id="artistaaviso"></p>
+                <p id="generoaviso"></p>
+                <p id="anoaviso"></p>
+                <p id="valoraviso"></p>
+                <p id="imagemaviso"></p>
+            </article>
+        </section>
+        <h1>Últimos Registros</h1>
+        <section id="secaoUltimosRegistros">
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

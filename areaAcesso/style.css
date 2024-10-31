@@ -1,0 +1,84 @@
+body {
+    background-image: url('/images/bigdisc2.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    scrollbar-width: thin;
+}
+
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+    color: #fdfdfd;
+    font-weight: 500;
+    text-align: center;
+}
+
+p {
+    color: #fdfdfd;
+}
+
+#gridAcesso {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: auto;
+}
+
+#gridAcesso article:first-child {
+    border-right: #fdfdfd 2px solid;
+    padding-right: 100px;
+}
+
+#gridAcesso article img {
+    margin-top: 60px;
+}
+
+#formAcesso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formAcesso input {
+    width: 240px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+#formAcesso button {
+    width: 250px;
+    margin-top: 20px;
+    height: 40px;
+    background-color: #cf1800;
+    color: #fdfdfd;
+    border: none;
+    border-radius: 5px;
+}
+
+#formAcesso button:hover {
+    background-color: #fdfdfd;
+    color: #cf1800;
+    cursor: pointer;
+    border: 2px solid #cf1800;
+}
+
+#toggleButton {
+    width: 250px;
+    margin-left: 35px;
+    height: 40px;
+    background-color: #20373d;
+    color: #fdfdfd;
+    border: none;
+    border-radius: 5px;
+}
+
+
+#toggleButton:hover {
+    background-color: #fdfdfd;
+    color: #20373d;
+    cursor: pointer;
+    border: 2px solid #20373d;
+}

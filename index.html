@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiscoDeco</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_left,chevron_right,shopping_cart_checkout" />
+</head>
+
+<body>
+    <header id="topo" style="display: none;">
+        <nav id="navmuda" class="icon">
+            <a href="/index.html"><img src="images/TextoLogoDD@4x.png" width="70px"></a>
+            <ul>
+                <li><a href="/outrosLancamentos/lancamentos.html">Lançamentos</a></li>
+                <li><a href="/categorias/categorias.html">Categorias</a></li>
+                <li id="cart"><a href="carrinho/carrinho.html">Carrinho</a></li>
+                <li id="userGreeting"><a href="/areaAcesso/acesso.html">Acessar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="inicio">
+        <header id="invisivelHeader">
+            <h1>DiscoDeco</h1>
+        </header>
+        <img src="images/WhiteLogo.png">
+    </section>
+    <section id="secaoLancamentos">
+        <h2 style="text-align: center;">Últimos Lançamentos</h2>
+        <p class="label">
+            < Retirada na loja disponível no Rio de Janeiro, RJ>
+        </p>
+        <section id="sliderLancamentos">
+            <button id="anterior"><span class="material-symbols-outlined">
+                    chevron_left
+                </span></button>
+            <article id="albumContainer"></article>
+            <button id="prox"><span class="material-symbols-outlined">
+                    chevron_right
+                </span></button>
+        </section>
+        <a href="/outrosLancamentos/lancamentos.html"><button class="bigbutton">Veja outros lançamentos</button></a>
+    </section>
+
+
+    <div id="loginModal" class="modal">
+        <div id="modalGrid">
+            <div id="modal-imagem">
+                <img src="/images/WhiteLogo.png" width="200px">
+            </div>
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+                <h5 id="textoInteragindo">Parece que você quer comprar alguma coisa... Faça login para continuar!</h5>
+                <h2 id="formTitle">Login</h2>
+                <form id="formAcesso">
+                    <input type="text" id="username" placeholder="Usuário" required>
+                    <input type="password" id="password" placeholder="Senha" required>
+                    <p id="avisoLogin"></p>
+                    <br>
+                    <button type="submit" id="loginButton">Entrar</button>
+                </form>
+                <h2 id="textoExterno">Ainda não tem uma conta?</h2>
+                <button id="toggleButton">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="reoomendacaoDia">
+        <h2 style="text-align: center;">Álbum do Dia</h2>
+        <p class="label">
+            < Retirada na loja disponível no Rio de Janeiro, RJ>
+        </p>
+        <article id="escolhidoHoje"></article>
+    </section>
+    <section id="exCategorias">
+        <h2 style="text-align: center;">Explore por Categorias</h2>
+        <p class="label">
+            < Retirada na loja disponível no Rio de Janeiro, RJ>
+        </p>
+        <article id="categorias">
+            <a href="/categorias/recomendados.html">
+                <div class="categoria">
+                    <div class="imagem" style="background-image: url('/images/hmhs.jpg');"></div>
+                    <span class="texto">Recomendados</span>
+                </div>
+            </a>
+            <div class="categoria">
+                <div class="imagem" style="background-image: url('/images/shortnsweet.jpg');"></div>
+                <span class="texto">Pop</span>
+            </div>
+            <div class="categoria">
+                <div class="imagem" style="background-image: url('/images/currents.jpg');"></div>
+                <span class="texto">Rock</span>
+            </div>
+            <div class="categoria">
+                <div class="imagem" style="background-image: url('/images/igor.jpg');"></div>
+                <span class="texto">Hip Hop</span>
+            </div>
+            <div class="categoria">
+                <div class="imagem" style="background-image: url('/images/lovedeluxe.jpg');"></div>
+                <span class="texto">Jazz</span>
+            </div>
+            <div class="categoria">
+                <div class="imagem" style="background-image: url('/images/Blue_Banisters.jpg');"></div>
+                <span class="texto">Alternativa</span>
+            </div>
+            <div class="categoria">
+                <div class="imagem" style="background-image: url('/images/frenchexit.jpg');"></div>
+                <span class="texto">Indie</span>
+            </div>
+            <div class="categoria">
+                <div class="imagem" style="background-image: url('/images/ctrl.jpg');"></div>
+                <span class="texto">R&B</span>
+            </div>
+        </article>
+        <a href="/categorias/categorias.html"><button class="bigbutton">Outras Categorias</button></a>
+    </section>
+    <section id="areaDetalhes">
+        <section id="detalhesGrid">
+            <article></article>
+            <article>
+                <h2>O que é a DiscoDeco?</h2>
+                <p>Somos uma loja de discos que busca trazer a melhor qualidade sonora.</p>
+            </article>
+            <article></article>
+            <article>
+                <h2>Reis da Pré-venda</h2>
+                <p>Temos parcerias com gravadoras e artistas que disponibilizam seus discos antecipademente somente para
+                    nossa loja!</p>
+            </article>
+            <article>
+                <h2>HQ dos Fãs</h2>
+                <p>Nossos discos tem a melhor qualidade de som entre as lojas do mesmo nicho. Além de produtos feitos
+                    para fãs!</p>
+            </article>
+            <article>
+                <h2>Trocas e Reembolso</h2>
+                <p>Nós temos uma política de até 30 dias para trocar um produto da loja ou receber reembolso.</p>
+            </article>
+        </section>
+    </section>
+    <section id="areaEndereco">
+        <section id="enderecoGrid">
+            <article>
+                <h2>Venha nos visitar!</h2>
+                <h3>Av. Rodrigues Alves 2 - Centro, Rio de Janeiro</h3>
+                <p>Seg. à Sexta - 09h às 18h</p>
+                <p>Sábado - 10h às 16h</p>
+            </article>
+            <article>
+                <h2>Contato:</h2>
+                <p>(21) 2345-6789</p>
+                <p>(21) 98765-4321</p>
+            </article>
+            <article>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1545.3486996581596!2d-43.18270144277068!3d-22.89568434888597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5aa1c27c9b%3A0x4b691c015a8b76bf!2sAv.%20Rodrigues%20Alves%2C%202%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1729680240664!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

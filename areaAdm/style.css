@@ -1,0 +1,236 @@
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin; 
+}
+
+body{
+    background-color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+}
+
+*{
+    font-family: 'Oswald', sans-serif;
+}
+
+h2{
+    color: #20373d;
+    font-weight: 500;
+}
+
+h5, h3{
+    font-weight: 400;
+}
+
+#topo img{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+#topo{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 70px;
+    margin-top: -103px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+#topo.visible {
+    display: block;
+    opacity: 1; 
+}
+
+#topo ul{
+    width: auto;
+    text-align: right;
+    padding: 0px;
+    margin-top: -65px;
+}
+
+#topo nav{
+    width: auto;
+    margin: 0px;
+    margin-top: -18px;
+    height: 70px;
+    padding: 0px;
+}
+
+#topo ul li{
+    display: inline-block;
+    text-align: center;
+    margin-top: 3px;
+    height: 70px;
+    width: 120px;
+    align-content: center;
+    margin-left: -4px;
+    background-size: 200% 200%;
+    background-image: linear-gradient(to top, #cf1800  50%, #ffffff 50%);
+    -webkit-transition: background-position 300ms;
+    -moz-transition: background-position 300ms;
+    -ms-transition: background-position 300ms;
+    -o-transition: background-position 300ms;
+    transition: background-position 300ms;
+}
+
+#topo ul li:last-of-type{
+    border-radius: 0px 0px 20px 0px;
+}
+
+#topo li:hover{
+    background-image: 
+    linear-gradient(to top, #cf1800 51%,  #ffffff 50%);
+    background-position: 0 100%;
+    -webkit-transition: background-position 300ms;
+    -moz-transition: background-position 300ms;
+    -ms-transition: background-position 300ms;
+    -o-transition: background-position 300ms;
+    transition: background-position 300ms;
+    cursor: pointer;
+}
+
+#topo ul li a{
+    transition: 300ms;
+} 
+
+#topo li:hover a{
+    transform: scale(1.2);
+    transition: 300ms;
+    color: #ffffff;
+}
+
+
+#topo ul li a{
+    text-decoration: none;
+    color: #cf1800;
+}
+
+#topo{
+    background-color: #ffffff;
+    height: 73px;
+    padding: 0px;
+    border-bottom: #808080 solid 0.5px;
+}
+
+.label{
+    color: #b41b1b; 
+    background-color: #b41b1b; 
+    font-family: Khand, sans-serif; 
+    font-weight: 400; 
+    font-size: 1px; 
+    text-align: center; 
+    padding-left: 15px; 
+    padding-right: 15px; 
+    padding-top: 4px;
+    width: 30px;
+    margin: auto;
+    margin-top: -16px;  
+    margin-bottom: 16px;
+}
+
+#secaoInicial{
+    margin: auto;
+    margin-top: 100px;
+    width: 1100px;
+}
+
+#secaoOpcoes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    width: 1000px;
+    margin-bottom: 200px;
+}
+
+#secaoOpcoes article{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+    width: 1000px;
+    border: #1c5b6b 2px solid;
+    margin-top: 2px;
+}
+
+
+#secaoOpcoes button{
+    background-color: #1c5b6b;
+    color: #fdfdfd;
+    width: 200px;
+    font-size: 16px;
+    border-radius: 20px;
+    width: 120px;
+    height: 50px;
+    margin-top: 18px;
+    transition: 0.2s;
+    margin-bottom: 20px;
+    border: none;
+}
+
+#secaoOpcoes button:hover{
+    transition: 0.2s;
+    background-color: #fdfdfd;
+    cursor: pointer;
+    color: #1c5b6b;
+    border: 1px solid #1c5b6b;
+}
+
+
+#userGreeting {
+    color: #cf1800;
+}
+
+#userGreeting a {
+    color: #cf1800;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#userGreeting:hover {
+    color: #ffffff;
+}
+
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #c01a04;
+    font-size: 14px;
+    z-index: 1;
+    width: 100px;
+    height: 85px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+#userGreeting .dropdown-menu a:first-child {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: -35px;
+}
+
+#userGreeting .dropdown-menu a:nth-child(2) {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -34px;
+}
+
+#userGreeting .dropdown-menu a:nth-child(3) {
+    position: absolute;
+    margin-top: 55px;
+    margin-left: -16px;
+}
+
+
+
+#userGreeting:hover .dropdown-menu a {
+    color: #c01a04;
+    transform: none;
+}
+
+#userGreeting .dropdown-menu a:hover {
+    text-decoration: underline;
+}
