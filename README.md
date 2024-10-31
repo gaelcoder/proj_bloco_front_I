@@ -31,9 +31,13 @@ Este projeto é uma aplicação front-end desenvolvida como parte do bloco de es
 </ul>
 
 <h3>Slider de Pedidos:</h3>
-Exibição dos pedidos passados com cards de tamanho fixo.
+<ul>
+<li>Exibição dos pedidos passados com cards de tamanho fixo.</li>
+</ul>
 
-Exclusão de Conta:
-Opção para o usuário excluir sua conta com confirmação de senha.
+<h3>Exclusão de Conta:</h3>
+<ul>
+<li>Opção para o usuário excluir sua conta com confirmação de senha.</li>
+</ul>
 </ol>
 
