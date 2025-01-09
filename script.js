@@ -3,10 +3,44 @@ const storage = localStorage.getItem('album')
 
 if (storage != null) {
     albumsReg = JSON.parse(storage)
+} else {
+    albumsReg = [
+            {"nome":"Ultraviolence","artista":"Lana Del Rey","ano":"2014","valor":119.9,"genero":"SOFT ROCK, ALTERNATIVA, POP","capa":"https://lastfm.freetls.fastly.net/i/u/ar0/eb300e3afe470b74b4384b169b96dd56.jpg"},
+            {"nome":"Pablo Honey","artista":"Radiohead","ano":"1993","valor":119.9,"genero":"INDIE ROCK, ROCK ALTERNATIVA","capa":"https://cdn-images.dzcdn.net/images/cover/f08424290260e58c6d76275253b316fd/500x500.jpg"},
+            {"nome":"AM","artista":"Arctic Monkeys","ano":"2013","valor":119.9,"genero":"INDIE ROCK, ROCK ALTERNATIVA","capa":"https://cdn-images.dzcdn.net/images/cover/64e54e307bd5e2bdb27ffeb662fd910d/0x1900-000000-80-0-0.jpg"}
+    ]
+    localStorage.setItem("album", JSON.stringify(albumsReg))
 }
 
 let users = JSON.parse(localStorage.getItem('users')) || {};
 
+if(!users || Object.keys(users).length === 0){
+    users = {
+        "admdetudo": {
+            "nome": "Admin",
+            "sobrenome": "Istrador",
+            "email": "admin@discodeco.com",
+            "usuario": "admdetudo",
+            "isAdmin": true,
+            "senha": "1234",
+            "enderecos": [],
+            "cartoes": [],
+            "pedidos": []
+        },
+        "jetik": {
+            "nome": "Jeremy",
+            "sobrenome": "Moltik",
+            "email": "jetik@email.com",
+            "usuario": "jetik",
+            "isAdmin": false,
+            "senha": "12345",
+            "enderecos": [],
+            "cartoes": [],
+            "pedidos": []
+        }
+    };
+    localStorage.setItem('users', JSON.stringify(users));
+}
 
 function addToCart(albumIndex) {
     let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
